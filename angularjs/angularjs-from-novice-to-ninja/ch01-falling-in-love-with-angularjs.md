@@ -72,11 +72,5 @@ Notes:
 | angular-mocks.js & angular-scenarios.js | support testing |
 | angular-resource.js| better support for interacting with REST APIs |
 
-| Script | Description |
-|--------|-------------|
-| a      | w           |
-| b      | x           |
-| c      |             |
-
 Required Tools
 ==============
