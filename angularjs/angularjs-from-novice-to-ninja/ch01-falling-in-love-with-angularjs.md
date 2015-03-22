@@ -25,4 +25,28 @@ AngularJS is an **MVW** (Model-View-Whatever) framework where **Whatever** means
 ------------------
 Single Page Apps (SPAs) load the content **asynchronously** on the same page and just change the URL in the browser to reflect it. It makes users feel as if they are interacting with desktop apps.
 
-With AngularJS rooting support, you can create different views for different URLs. AngularJS will load the appropriate view in the main page when a specific URL is requested. We are dividing our app into different parts and thereby making it more maintainable.
+AngularJS support **rooting** with **multiple views** for different URLs: it will load the appropriate view in the main page when a specific URL is requested. We are dividing our app into different parts and thereby making it more maintainable.
+
+4. Templating
+-------------
+AngularJS uses **plain old HTML** as the templating language, which makes designers and developers' jobs independent to each others.
+
+5. Form validation
+------------------
+AngularJS forms incorporate **real-time form validations**, **custom validators**, **formatters**, etc. with several **CSS control state classes**.
+
+6. Directives
+-------------
+Directives trick HTML into doing **new things** that are not supported natively. This is done by introducing **new elements/attributes** and teaching the **new syntax** to HTML.
+
+7. Embeddable, testable and injectable
+--------------------------------------
+You can easily embed an AngularJS app within **another app**, or use it along with **other technologies**.
+
+AngularJS favors **TDD**, supports **unit** and **End-to-End testing**.
+
+AngularJS provides full support for **Dependency Injection**.
+
+8. Powered by Google and an active community
+--------------------------------------------
+AngularJS is **open-source**, maintained by **Google** developers, released under **MIT** license and available for **download at GitHub**. The **documentation** is also pretty good. The number of developers using it is also increasing with great **tutorials** all over the web.
