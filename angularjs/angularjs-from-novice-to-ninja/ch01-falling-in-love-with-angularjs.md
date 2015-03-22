@@ -76,3 +76,13 @@ Notes:
 
 Required Tools
 ==============
+Some IDEs:
+
+ - JetBrains Webstorm
+ - Sublime Text
+ - TextMate (MacOSX only)
+ - NetBeans
+
+Debugging Tools:
+
+ - AngularJS Baratang plug-in for Chrome
