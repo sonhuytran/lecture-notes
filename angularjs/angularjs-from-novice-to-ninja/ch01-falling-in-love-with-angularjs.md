@@ -50,3 +50,13 @@ AngularJS provides full support for **Dependency Injection**.
 8. Powered by Google and an active community
 --------------------------------------------
 AngularJS is **open-source**, maintained by **Google** developers, released under **MIT** license and available for **download at GitHub**. The **documentation** is also pretty good. The number of developers using it is also increasing with great **tutorials** all over the web.
+
+Download and Installation
+=========================
+
+Installation via CDN
+--------------------
+Put this inside the `<head/>` tag of the document.
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+Note: even-numbered versions are **stable** releases, while odd-numbered ones are for *developers only*.
