@@ -64,12 +64,19 @@ Notes:
 
 - Even-numbered versions are **stable** releases, while odd-numbered ones are for *developers only*.
 - There are several intereting extra AngularJS scripts:
+
 | Script | Description |
 | ------- | ----- |
 | angular-route.js | routing support |
 | angular-animate.js | CSS3 animations |
 | angular-mocks.js & angular-scenarios.js | support testing |
 | angular-resource.js| better support for interacting with REST APIs |
+
+| Script | Description |
+|--------|-------------|
+| a      | w           |
+| b      | x           |
+| c      |             |
 
 Required Tools
 ==============
