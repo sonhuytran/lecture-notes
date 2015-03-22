@@ -1,5 +1,7 @@
 ## Falling In Love With AngularJS ##
+
 [TOC]
+
 Definition++
 =======
 AngularJS is a **framework that extends HTML** by teaching it **new syntax**, making it suitable for developing really great **web applications**.
