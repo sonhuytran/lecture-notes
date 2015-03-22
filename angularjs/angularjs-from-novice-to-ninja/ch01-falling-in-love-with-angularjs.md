@@ -86,3 +86,7 @@ Some IDEs:
 Debugging Tools:
 
  - AngularJS Baratang plug-in for Chrome
+
+The Angular Seed Project
+========================
+The [Angular Seed project](https://github.com/angular/angular-seed) provides a good skeleton structure for AngularJS apps so that you can quicky boostrap the app and start developing.
