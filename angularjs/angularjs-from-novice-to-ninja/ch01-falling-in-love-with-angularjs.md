@@ -21,11 +21,11 @@ With AngularJS you're going to build *solid*, *well-structured*, and *fully test
 
 AngularJS is an **MVW** (Model-View-Whatever) framework where **Whatever** means **Whatever Works for You**. The reason is that AngularJS can be used both as **MVC** and **MVVM** framework.
 
-3. Rooting Support
+3. Routing Support
 ------------------
 Single Page Apps (SPAs) load the content **asynchronously** on the same page and just change the URL in the browser to reflect it. It makes users feel as if they are interacting with desktop apps.
 
-AngularJS support **rooting** with **multiple views** for different URLs: it will load the appropriate view in the main page when a specific URL is requested. We are dividing our app into different parts and thereby making it more maintainable.
+AngularJS support **routing** with **multiple views** for different URLs: it will load the appropriate view in the main page when a specific URL is requested. We are dividing our app into different parts and thereby making it more maintainable.
 
 4. Templating
 -------------
@@ -53,14 +53,23 @@ AngularJS is **open-source**, maintained by **Google** developers, released unde
 
 Download and Installation
 =========================
-
-Installation via CDN
---------------------
-Put this inside the `<head/>` tag of the document:
+Beside normal locally downloading & importing method, you can import it into the HTML via CDN by putting this inside the `<head/>` tag of the document:
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
 or minified version:
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 
-Note: even-numbered versions are **stable** releases, while odd-numbered ones are for *developers only*.
+Notes:
+
+- Even-numbered versions are **stable** releases, while odd-numbered ones are for *developers only*.
+- There are several intereting extra AngularJS scripts:
+| Script | Description |
+| ------- | ----- |
+| angular-route.js | routing support |
+| angular-animate.js | CSS3 animations |
+| angular-mocks.js & angular-scenarios.js | support testing |
+| angular-resource.js| better support for interacting with REST APIs |
+
+Required Tools
+==============
