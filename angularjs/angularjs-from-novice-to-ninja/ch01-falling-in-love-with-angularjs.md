@@ -125,3 +125,7 @@ Structuring Our Code with MVW
  * Modules can be loaded and tested independently.
 
 ### Components
+
+ 1. **Controller**: handles inputs, calls the business code and shares data with view via `$scope`. In AngularJS, the business logic is performed inside a service and injected into the controller. The controller uses the services to obtain data and sets it on the `$scope`, so it is just aware of the `$scope` and not the view.
+ 2. **Model**: represents business data. The UI is a projection of the model at any given time.
+ 3. **View**: is only concerned with displaying data & decoupled from the business logic. It should update itself whenever the underlying data model changes. In AngularJS the view reads model data from the `$scope`. This helps the front end development to progress in parallel with the back end activity.
