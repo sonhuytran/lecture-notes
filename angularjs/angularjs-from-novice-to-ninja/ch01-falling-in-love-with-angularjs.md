@@ -100,8 +100,28 @@ Component           | Description
 :------------------ | -----------------------------------------------------------------
 1) Model            | Data shown to users, in **POJOs** (Plain Old JavaScript Objects)
 2) View             | What users see after the raw HTML template involving directives & expressions is compiled and linked with corrent scope.
-3) Controller       | s
-4) Scope            | s
-5) Directives       | s
-6) Expressions      | s
-7) Template         | s
+3) Controller       | The business logic driving the app
+4) Scope            | A context holding data models & functions. A controller usually sets these models & functions in the scope.
+5) Directives       | Something teaches HTML new syntax by extending HTML with custom elements & attributes.
+6) Expressions      | `( {{ }} )` used for accessing scope models & functions.
+7) Template         | HTML with additional markup in the form of directives & expressions.
+
+What is MVW
+-----------
+AngularJS can be used to develop apps based on both the MVC or MVVM patterns.
+
+### [MVC](https://alexatnet.com/articles/model-view-controller-mvc-javascript)
+MVC improves code organization by promoting **separation of concerns**: The UI (**View**) is separated from business data (**Model**) of the app through a **Controller** which handles inputs, delegates the tasks to business logic and coordinates with the model and view.
+
+### [MVVM](http://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers/)
+MVVM is a design pattern to build declarative UIs. A **ViewModel** exposes the **Model** to the **View** in a way the **View** can understand it. In other words, the **ViewModel** is a pure code representation of the **Model**.
+
+Structuring Our Code with MVW
+-----------------------------
+### Benefits
+
+ * The business logic (model) is decoupled from the UI (view).
+ * Maintenance is easier because everything has its own place.
+ * Modules can be loaded and tested independently.
+
+### Components
