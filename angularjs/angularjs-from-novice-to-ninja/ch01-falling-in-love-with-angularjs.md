@@ -92,3 +92,16 @@ Debugging Tools:
 The Angular Seed Project
 ========================
 The [Angular Seed project](https://github.com/angular/angular-seed) provides a good skeleton structure for AngularJS apps so that you can quicky boostrap the app and start developing.
+
+The Anatomy of an AngularJS app
+===============================
+
+Component           | Description
+:------------------ | -----------------------------------------------------------------
+1) Model            | Data shown to users, in **POJOs** (Plain Old JavaScript Objects)
+2) View             | What users see after the raw HTML template involving directives & expressions is compiled and linked with corrent scope.
+3) Controller       | s
+4) Scope            | s
+5) Directives       | s
+6) Expressions      | s
+7) Template         | s
