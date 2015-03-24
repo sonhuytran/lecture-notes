@@ -132,6 +132,7 @@ AngularJS guarantees that your view is always stays updated with the latest mode
     </html>
 
 What happens step by step:
+
 1. The `ng-app` directive bootstraps the app. AngularJS creates a `$rootScope` for the HTML page.
 2. The `ng-init` directive creates a model called `name`, keeps it in the root scope and initialize it with the *AngularJS* value.
 3. The `ng-model` directive attaches the model `name` to the input field. This is the basis of two-way binding.
