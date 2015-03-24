@@ -97,4 +97,12 @@ and in the HTML view:
 
 ### Adding Instance Functions and Properties to Controllers
 
+Instead of the `$scope` object, we can attach functions and properties directly to the controller (using `this` object). Then in the HTML, use for example `ng-controller="GreetingController as greetingController"` and `{{greetingController.greeting}}` as expression.
+
+* Pros
+	* When nested controllers have models with the same name.
+* Cons
+	* The `$scope` object exists for clear separation of concern between `controller` and `view`.
+	* The approach is not mainstream and leads to more typing.
+
 ### Dependency Injection in Controllers With Minification
