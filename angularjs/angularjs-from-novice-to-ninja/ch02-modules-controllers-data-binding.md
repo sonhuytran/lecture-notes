@@ -79,6 +79,7 @@ It's just like adding model object to `$scope`. For example;
     $scope.greeting = $scope.helloMessages[0];
     $scope.getRandomHelloMessage = function() {
     	$scope.greeting = $scope.helloMessages[parseInt((Math.random() * $scope.helloMessages.length))];
+    }
 
 ### Adding Instance Functions and Properties to Controllers
 
