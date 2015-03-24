@@ -158,4 +158,9 @@ What happens step by step:
     </body>
     </html>
 
-## Conclusion
+To summarize, two-way data binding:
+
+1. Keeps the view and model data in sync in both directions.
+2. Provides a greate declarative binding syntax to express what our app does.
+3. Frees us from the DOM manipulation, which is hard to test and debug.
+4. Saves time by reducing the code size significantly.
