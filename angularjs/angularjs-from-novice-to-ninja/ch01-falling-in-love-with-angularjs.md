@@ -131,3 +131,19 @@ Structuring Our Code with MVW
  3. **View**: is only concerned with displaying data & decoupled from the business logic. It should update itself whenever the underlying data model changes. In AngularJS the view reads model data from the `$scope`. This helps the front end development to progress in parallel with the back end activity.
 
 So the `$scope` object is where the Controller and the View share data.
+
+Unit and End-to-End Testing in AngularJS
+==================================
+**Unit testing** is a technique to validate each smallest testable part, each functionality of the app.
+
+**End-to-End testing** ensures that many pieces of code work as expected when integrated together.
+
+Plugins needed: *karma*, *karma-chrome-launcher*/*karma-firefox-launcher*/*karma-safari-launcher*/*karma-opera-launcher*, *jasmine* for unit testing, *protractor* for end-to-end testing.
+
+### Where to Put Your Tests
+**Unit tests**: &lt;app-name&gt;/components/version/
+**End-to-End Tests**: e2e-tests/  
+
+### How to Run Tests
+#### For Unit Tests
+#### For End-to-End Tests
