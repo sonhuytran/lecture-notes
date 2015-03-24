@@ -80,6 +80,20 @@ It's just like adding model object to `$scope`. For example;
     $scope.getRandomHelloMessage = function() {
     	$scope.greeting = $scope.helloMessages[parseInt((Math.random() * $scope.helloMessages.length))];
     }
+and in the HTML view:
+
+    <button ng-click="getRandomHelloMessage()">Random Hello Message</button>
+
+#### What a Controller Should ***Not*** Do
+
+* No DOM manipulation. Use `directives` instead.
+* No formatting model values. Use `filters` instead.
+* No repeatable code. Encapsulate them in `services` instead.
+
+#### What a Controller Should Do
+
+* Set the initial state of a scope by attaching models on it.
+* Set functions on the scope that perform some tasks.
 
 ### Adding Instance Functions and Properties to Controllers
 
