@@ -4,9 +4,7 @@
 
 Definition++
 =======
-AngularJS is a **framework that extends HTML** by teaching it **new syntax**, making it suitable for developing really great **web applications**.
-
-With AngularJS, you can introduce **new HTML elements** and **custom attributes**.
+AngularJS is a **framework that extends HTML** by teaching it **new syntax**, making it suitable for developing really great **web applications**. AngularJS, you can introduce **new HTML elements** and **custom attributes**.
 
 AngularJS has been designed from ground up with **TDD** (Test Driven Development) in mind.
 
@@ -140,10 +138,13 @@ Unit and End-to-End Testing in AngularJS
 
 Plugins needed: *karma*, *karma-chrome-launcher*/*karma-firefox-launcher*/*karma-safari-launcher*/*karma-opera-launcher*, *jasmine* for unit testing, *protractor* for end-to-end testing.
 
-### Where to Put Your Tests
-**Unit tests**: &lt;app-name&gt;/components/version/
-**End-to-End Tests**: e2e-tests/  
+### Where to Put Your Tests [Updated Angular Seed Version]
+
+* **Unit tests**: `<app-name>/components/version/`
+* **End-to-End Tests**: `e2e-tests/`  
 
 ### How to Run Tests
 #### For Unit Tests
+* `npm test`
+* `npm run test-single-run`
 #### For End-to-End Tests
