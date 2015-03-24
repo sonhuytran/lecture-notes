@@ -150,3 +150,20 @@ Plugins needed: *karma*, *karma-chrome-launcher*/*karma-firefox-launcher*/*karma
 * `npm run test-single-run`
 
 #### For End-to-End Tests
+
+When Not To Use AngularJS
+=========================
+AngularJS is a good choice with data-driven apps, when jQuery (or likely libs) is better suited for heavy DOM manipulations. Angular is not good neither for game-like apps.
+
+Conclusion
+==========
+
+AngularJS helps us overcome 3 major obstacles in web app development:
+1. The plumbing: simple core project.
+2. DOM manipulations: you don't need to programmatically manipulate the DOM.
+3. JavaScript coding for simple tasks.
+
+and brings us 3 major benefits:
+1. Greatly reduce the number of lines of code --> fewer maintenance nightmares.
+2. Greate testability & maintainability: well-structured code & separation of concerns.
+3. Awesome testing support.
