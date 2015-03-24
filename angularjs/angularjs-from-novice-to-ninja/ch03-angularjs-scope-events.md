@@ -18,7 +18,7 @@
 
 ### The Watchers in AngularJS
 
-A **watcher** monitors model changes and takes action in response.
+A **watcher** monitors model changes and takes action in response. The `$scope` object has a function `$watch()` used to register a watcher.
 
 ### The `$watchCollection()` Function
 
