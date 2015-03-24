@@ -106,3 +106,8 @@ Instead of the `$scope` object, we can attach functions and properties directly 
 	* The approach is not mainstream and leads to more typing.
 
 ### Dependency Injection in Controllers With Minification
+
+    angular.module('myApp',[])
+    .controller('DemoController', ['$rootScope', '$scope', '$http', function ($rootScope, $scope, $http){
+	    // controller goes here
+    }]);
