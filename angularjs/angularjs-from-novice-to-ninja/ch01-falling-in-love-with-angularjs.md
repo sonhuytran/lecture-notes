@@ -145,6 +145,8 @@ Plugins needed: *karma*, *karma-chrome-launcher*/*karma-firefox-launcher*/*karma
 
 ### How to Run Tests
 #### For Unit Tests
+
 * `npm test`
 * `npm run test-single-run`
+
 #### For End-to-End Tests
