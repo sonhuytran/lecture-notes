@@ -56,9 +56,29 @@ A controller is a constructor function which is instantiated by AngularJS when i
 	    $scope.greeting = 'Hello!'; // set the name model on scope
     }]);
 
-A controller can depend on other components. An application has only one `$rootScope`.
+A controller is associated with a `$scope` object and can depend on other components. An application has only one `$rootScope`.
+
+Then we can use it in the HTML view. Note: *medium* is a built-in filter which formats the *date*.
+
+    <!DOCTYPE html>
+    <html ng-app="myApp">
+    <head>
+	    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+	    <script src="app.js"></script>
+    </head>
+    <body ng-controller="GreetingController">
+	    {{greeting}} User! The current date/time is <span>{{ now | date: 'medium' }}</span>.
+    </body>
+    </html>
 
 ### Adding Logic to the Controller
+
+It's just like adding model object to `$scope`. For example;
+
+    $scope.helloMessages = ['Hello', 'Bonjour', 'Hola', 'Ciao', 'Hallo'];
+    $scope.greeting = $scope.helloMessages[0];
+    $scope.getRandomHelloMessage = function() {
+    	$scope.greeting = $scope.helloMessages[parseInt((Math.random() * $scope.helloMessages.length))];
 
 ### Adding Instance Functions and Properties to Controllers
 
