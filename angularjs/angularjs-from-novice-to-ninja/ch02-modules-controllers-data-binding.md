@@ -140,4 +140,21 @@ What happens step by step:
 
 ### Doing Something Cool
 
+    <!doctype html>
+    <html lang="en" ng-app>
+    <head>
+	    <meta charset="utf-8">
+	    <title>Two way data binding</title>
+    </head>
+    <body ng-init="fbID='sandeep.panda92'">
+
+    <input type="text" ng-model="fbID" />
+    <br/>
+    
+    <span><img ng-src="https://graph.facebook.com/{{fbID}}/picture?type=normal"/></span>
+    
+    <script src="lib/angular/angular.js"></script>
+    </body>
+    </html>
+
 ## Conclusion
