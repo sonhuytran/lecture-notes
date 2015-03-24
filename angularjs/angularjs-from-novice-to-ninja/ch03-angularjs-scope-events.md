@@ -18,6 +18,8 @@
 
 ### The Watchers in AngularJS
 
+A **watcher** monitors model changes and takes action in response.
+
 ### The `$watchCollection()` Function
 
 ### The `$apply()` Function and the `$digest` Loop
