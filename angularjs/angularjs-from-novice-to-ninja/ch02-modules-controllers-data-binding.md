@@ -44,3 +44,22 @@ Modularization by features clearly keeps your app maintainable and testable in t
 ## Controllers
 
 ### The Role of a Controller
+
+The task of a controller is to augment the scope by attaching models and functions to it.
+
+A controller is a constructor function which is instantiated by AngularJS when it encounters `ng-controller` directive in HTML.
+
+### Attaching Properties and Functions to Scope
+
+    angular.module('myApp', []).controller('GreetingController', ['$scope', '$rootScope', 'customService', function($scope, $rootScope, customService) {
+	    $scope.now = new Date(); // set the model 'now' on scope
+	    $scope.greeting = 'Hello!'; // set the name model on scope
+    }]);
+
+A controller can depend on other components. An application has only one `$rootScope`.
+
+### Adding Logic to the Controller
+
+### Adding Instance Functions and Properties to Controllers
+
+### Dependency Injection in Controllers With Minification
