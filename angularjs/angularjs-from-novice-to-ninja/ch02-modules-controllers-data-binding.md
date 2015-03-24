@@ -111,3 +111,33 @@ Instead of the `$scope` object, we can attach functions and properties directly 
     .controller('DemoController', ['$rootScope', '$scope', '$http', function ($rootScope, $scope, $http){
 	    // controller goes here
     }]);
+
+## Overview of Two-Way Data Binding
+
+AngularJS guarantees that your view is always stays updated with the latest model data.
+
+    <!doctype html>
+    <html lang="en" ng-app>
+    <head>
+    	<meta charset="utf-8">
+    	<title>Two way data binding</title>
+    </head>
+    <body ng-init="name='AngularJS'">
+    
+    <input type="text" ng-model="name"/>
+    <div><h2>Hello, {{ name }}</div>
+    <script src="lib/angular/angular.js"></script>
+    
+    </body>
+    </html>
+
+What happens step by step:
+1. The `ng-app` directive bootstraps the app. AngularJS creates a `$rootScope` for the HTML page.
+2. The `ng-init` directive creates a model called `name`, keeps it in the root scope and initialize it with the *AngularJS* value.
+3. The `ng-model` directive attaches the model `name` to the input field. This is the basis of two-way binding.
+4. The `{{ name }}` expression binds the model data to view unidirectionally. It watchs for the model value and update the DOM whenever the value changes.
+5. Whenever we type into the input field, the view is updated immediately with the latest value.
+
+### Doing Something Cool
+
+## Conclusion
