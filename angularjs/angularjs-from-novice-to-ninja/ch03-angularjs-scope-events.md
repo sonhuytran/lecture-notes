@@ -33,6 +33,13 @@ The return value of `$scope.$watch()` is a function which can be called to **unb
 
 ### The `$watchCollection()` Function
 
+We can use this function to watch a collection or an object. We will be notified when a new item is added to the array, or an existing one is removed, updated or reordered. It's the same in case of an object and its properties.
+
+    $scope.$watchCollection('myCollection', function (newCollection, oldCollection) {
+	    // handle the change
+	    console.log(newCollection); //print new collection
+	});
+
 ### The `$apply()` Function and the `$digest` Loop
 
 ### `$apply` and `$digest` in Action
