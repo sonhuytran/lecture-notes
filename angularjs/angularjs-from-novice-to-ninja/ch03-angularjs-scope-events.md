@@ -83,6 +83,19 @@ This is what happens when you write:
 
 #### Introducing the `$timeout` Service
 
+AngularJS' `$timeout` service is just like `setTimeout()` function but it wraps your code already in the `$apply()` function. Example:
+
+```JavaScript
+angular.module('myApp', []).controller('TimeoutController', function($scope, $timeout) {
+	$scope.fetchMessage = function() {
+		$timeout(function() {
+			$scope.message = 'Fetched after 3 seconds'; // no need for $apply()
+			console.log('message=' + $scope.message);
+		}, 3000);
+	}
+});
+```
+
 ## Broadcasting & Emitting Events
 
 ### `$scope.$emit(name, args)` for Emitting Events
