@@ -20,12 +20,14 @@
 
 A **watcher** monitors model changes and takes action in response. The `$scope` object has a function `$watch()` used to register a watcher.
 
-    $scope.$watch('wishListCount', function(newValue, oldValue){
-	    console.log('called ' + newValue + ' times');
-	    if (newValue == 2) {
-		    alert('Great! You have 2 items in your wish list. Time to buy what you love. ');
-		}
-    });
+```JavaScript
+$scope.$watch('wishListCount', function(newValue, oldValue){
+    console.log('called ' + newValue + ' times');
+    if (newValue == 2) {
+	    alert('Great! You have 2 items in your wish list. Time to buy what you love. ');
+	}
+});
+```
 
 By default, **watchers** compare objects by reference. The listener has also an optional third parameter *objectEquality* (boolean, by default *false*), we can use it to get notification whenever any of the object's properties changes.
 
@@ -34,11 +36,12 @@ The return value of `$scope.$watch()` is a function which can be called to **unb
 ### The `$watchCollection()` Function
 
 We can use this function to watch a collection or an object. We will be notified when a new item is added to the array, or an existing one is removed, updated or reordered. It's the same in case of an object and its properties.
-
-    $scope.$watchCollection('myCollection', function (newCollection, oldCollection) {
-	    // handle the change
-	    console.log(newCollection); //print new collection
-	});
+```JavaScript
+$scope.$watchCollection('myCollection', function (newCollection, oldCollection) {
+    // handle the change
+    console.log(newCollection); //print new collection
+});
+```
 
 ### The `$apply()` Function and the `$digest` Loop
 
