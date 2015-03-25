@@ -115,7 +115,12 @@ This function is the same as `$emit()` except that the event propagates downward
 
 ### `$scope.$on(name, handlerFunction)` for Registering Listeners
 
-### Events in Action
+`handlerFunction` is a `callback(event, args)`, while `event` has these properties and functions:
+
+1. `name`
+2. `targetScope`: the scope that emitted/broadcasted the event
+3. `currentScope`: the scope that is handling the event
+4. `stopPropagation()`: available for **emitted** events only
 
 ### The `$destroy` Event
 
