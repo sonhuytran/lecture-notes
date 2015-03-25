@@ -50,6 +50,20 @@ The digest circle doesn't run only once after the `$apply()` call. It starts all
 
 > **-->** It's good to refrain from model mutation in the listener functions.
 
+The `$digest` cycle always runs at least twice. This is called **dirty checking**. If you want a function is called whenever **$digest()** is called, pass it as the first and *only* argument of the `$watch()` function:
+
+```
+$scope.$watch(function() {
+    // do something here
+    console.log('called in a digest cycle');
+    return;
+});
+```
+
+> Internally, `ng-click` and `ng-model` wrap the code that changes the models inside an `$apply()` call.
+
+This is what happens with `<input type="text" ng-model="name">`:
+
 ### `$apply` and `$digest` in Action
 
 #### Introducing the `$timeout` Service
