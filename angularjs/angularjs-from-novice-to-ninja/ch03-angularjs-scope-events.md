@@ -65,7 +65,19 @@ $scope.$watch(function() {
 
 > Internally, `ng-click` and `ng-model` wrap the code that changes the models inside an `$apply()` call.
 
-This is what happens with `<input type="text" ng-model="name">`:
+This is what happens when you write:
+```html
+<input type="text" ng-model="name"/>
+```
+
+1. The directive `ng-model` register a `keydown` listener with the input field.
+2. Inside the `keydown` listener the directive assigns the new value to the scope's model. This code is wrapped inside `$apply()` call.
+3. The digest cycle starts in which the watchers are called. If there is an expression `{{ name }}` in the view, a watcher is already registered. It will get called and update the DOM using `innerHTML`.
+4. You can observe the result.
+
+> If you use Angular's `$http` built-in service to make XHRs, the model mutation code is implicitly wrapped within the `$apply()` call. But with plain JavaScript, you need to mutate the model inside the `$apply()`.
+> 
+> If a function which changes models is passed as an argument to `$apply()`, it is evaluated and then `$rootScope.$digest()` is fired. This method should ALWAYS be used, because this function will be wrapped in a `try/catch` with the `$exceptionHandler` service.
 
 ### `$apply` and `$digest` in Action
 
