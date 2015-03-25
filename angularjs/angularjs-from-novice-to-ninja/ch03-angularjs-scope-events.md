@@ -42,6 +42,14 @@ We can use this function to watch a collection or an object. We will be notified
 
 ### The `$apply()` Function and the `$digest` Loop
 
+The **expressions** are a special type of directive that set up a **watcher** on models or functions. Their purpose is to get notified when the value of the model changes and update the DOM accordingly.
+
+A **scope** has a function called `$apply()` which takes a function as an argument. AngularJS knows about model mutations ***only if*** that mutation is done inside `$apply()`. Then AngularJS knows that some model changes might have occurred. It starts a **digest circle** by calling `$rootScope.$digest()` - which propagates to all child scopes. Then ALL the watchers are called to check if the model value has changed.
+
+The digest circle doesn't run only once after the `$apply()` call. It starts all over again and fires each watcher to check if any of the models have been mutated in the last loop, till NONE of the models have changed OR it reaches the maximum 10 loop counts.
+
+> **-->** It's good to refrain from model mutation in the listener functions.
+
 ### `$apply` and `$digest` in Action
 
 #### Introducing the `$timeout` Service
