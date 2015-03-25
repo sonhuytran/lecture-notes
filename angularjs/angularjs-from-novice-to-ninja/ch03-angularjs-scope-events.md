@@ -20,6 +20,17 @@
 
 A **watcher** monitors model changes and takes action in response. The `$scope` object has a function `$watch()` used to register a watcher.
 
+    $scope.$watch('wishListCount', function(newValue, oldValue){
+	    console.log('called ' + newValue + ' times');
+	    if (newValue == 2) {
+		    alert('Great! You have 2 items in your wish list. Time to buy what you love. ');
+		}
+    });
+
+By default, **watchers** compare objects by reference. The listener has also an optional third parameter *objectEquality* (boolean, by default *false*), we can use it to get notification whenever any of the object's properties changes.
+
+The return value of `$scope.$watch()` is a function which can be called to **unbind** the watcher. It also clears the memory allocated to the watcher.
+
 ### The `$watchCollection()` Function
 
 ### The `$apply()` Function and the `$digest` Loop
