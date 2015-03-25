@@ -98,9 +98,20 @@ angular.module('myApp', []).controller('TimeoutController', function($scope, $ti
 
 ## Broadcasting & Emitting Events
 
+AngularJS support 2 types of event propagation:
+
+1. **Emitting** the event upwards in the scope hierarchy.
+2. **Broadcasting** the event downwards in the scope hierarchy.
+
 ### `$scope.$emit(name, args)` for Emitting Events
 
+The event life cycle starts with the `$scope` on which `$emit()` was called and is dispatched upwards in the scope hierarchy to all the registered listeners.
+
+The `$scope` gets notified via `$on` when the event is emitted.
+
 ### `$scope.$broadcast(name, args)` for Broadcasting Events
+
+This function is the same as `$emit()` except that the event propagates downwards in the scope hierarchy to all the child scopes.
 
 ### `$scope.$on(name, handlerFunction)` for Registering Listeners
 
