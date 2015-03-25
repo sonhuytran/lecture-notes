@@ -52,7 +52,7 @@ The digest circle doesn't run only once after the `$apply()` call. It starts all
 
 The `$digest` cycle always runs at least twice. This is called **dirty checking**. If you want a function is called whenever **$digest()** is called, pass it as the first and *only* argument of the `$watch()` function:
 
-```
+```JavaScript
 $scope.$watch(function() {
     // do something here
     console.log('called in a digest cycle');
