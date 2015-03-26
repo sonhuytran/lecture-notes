@@ -15,6 +15,23 @@ When user navigates to a different URL, the route changes and content of the rou
 > - faster view rendering
 
 ## Creating Multiple Views
+
+We need to include the `angular-route.js`, then create a separate HTML file for each view. Example of a route config:
+
+```JavaScript
+angular.module('myApp').config(function ($routeProvider) {
+	$routeProvider
+		.when('/view1', {
+			controller: 'Controller1',
+			templateUrl: 'partials/view1.html'
+		})
+		.when('/view2', {
+			controller: 'Controller2'
+			templateUrl: 'partials/view2.html'
+		});
+});
+```
+
 ## Using `$routeParams` in the Controller
 ## Using `ng-template`
 ## The `resolve` Property in the Route Config Object
