@@ -126,4 +126,14 @@ This function is the same as `$emit()` except that the event propagates downward
 
 ### The `$destroy` Event
 
+When a scope is being destroyed, a `$destroy` event is broadcast on the scope. You can use it to cancel the timers from the `$timeout` service, cancel the watchers or any custom event listeners.
+
+Any digest cycle won't touch this and its child scopes anymore.
+
+```JavaScript
+$scope.$on('$destroy', function () {
+	// clean up code
+});
+```
+
 ## Conclusion
