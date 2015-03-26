@@ -36,6 +36,16 @@ angular.module('myApp').config(function ($routeProvider) {
 ```
 
 ## Using `$routeParams` in the Controller
+
+If we config the router with an URL like `/view1/:param1/:param2`, we can retrieve it in the controller using the `$routeParams`:
+
+```JavaScript
+function($scope, $routeParams) {
+	$scope.var1 = $routeParams.param1;
+	$scope.var2 = $routeParams.param2;
+}
+```
+
 ## Using `ng-template`
 ## The `resolve` Property in the Route Config Object
 ## Exploring the `$location` Service
