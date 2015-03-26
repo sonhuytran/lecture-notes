@@ -122,6 +122,8 @@ This function is the same as `$emit()` except that the event propagates downward
 3. `currentScope`: the scope that is handling the event
 4. `stopPropagation()`: available for **emitted** events only
 
+> The `$rootScope` can be used as a Central Message Bus to notify all child scopes.
+
 ### The `$destroy` Event
 
 ## Conclusion
