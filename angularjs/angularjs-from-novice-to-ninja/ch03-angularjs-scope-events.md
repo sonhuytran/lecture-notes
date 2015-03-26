@@ -135,5 +135,3 @@ $scope.$on('$destroy', function () {
 	// clean up code
 });
 ```
-
-## Conclusion
