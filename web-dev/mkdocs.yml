@@ -1,0 +1,5 @@
+site_name: Web Development
+pages:
+- ['index.md', 'Home']
+- ['web-security-cross-domain.md', 'Web Security', 'Cross-Domain']
+theme: readthedocs
