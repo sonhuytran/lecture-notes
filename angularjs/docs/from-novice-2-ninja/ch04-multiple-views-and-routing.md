@@ -11,10 +11,11 @@ AngularJS routing API enables us to **map URLs with specific functionalities**, 
 When user navigates to a different URL, the route changes and content of the route are *dynamically* loaded into the page via *an AJAX call*.
 
 > **Benefits of Single Page Apps:**
+
 > - much less network traffic
 > - faster view rendering
 
-## Creating Multiple Views
+# Creating Multiple Views
 
 We need to include the `angular-route.js`, then create a separate HTML file for each view. Example of a route config:
 
@@ -37,7 +38,7 @@ angular.module('myApp').config(function ($routeProvider) {
 
 The `view()` function has two arguments: the path (shown in browser's url) of the view, and a **route config object**.
 
-## Using `$routeParams` in the Controller
+# Using `$routeParams` in the Controller
 
 If we config the router with an URL like `/view1/:param1/:param2`, we can retrieve it in the controller using the `$routeParams`:
 
@@ -60,7 +61,7 @@ function ($scope, $location) {
 
 `$routeParams` can parse also the query string. If the URL contains `?key1=value1`, the key/value pair is added to `$routeParams`.
 
-## Using `ng-template`
+# Using `ng-template`
 
 We have an option to define templates inline with the `ng-template` directive. Firstly, we create the scripts:
 
@@ -88,7 +89,7 @@ $routeProvider
 	});
 ```
 
-## The `resolve` Property in the Route Config Object
+# The `resolve` Property in the Route Config Object
 
 In the route config object, we can add the property `resolve`, which can be a *string* or a *function* used to pass additional dependencies to the controller.
 
@@ -127,24 +128,27 @@ At last, in the view template:
 <li ng-repeat="name in names">{{ name }}</li>
 ```
 
-## Exploring the `$location` Service
+# Exploring the `$location` Service
 
 The AngularJS `$location` service:
 
 * exposes the current browser URL (obtained from `window.location`) through a well-defined API. --> We can change the URL to navigate to a different route.
 * keeps itself and the URL in sync --> We can watch for changes in URL.
 
+> Updating browser URL with `$location` just loads a new route and does **NOT** refresh a full page. For a full page refresh or a redirection to a different URL, use `$window.location.href`.
+
+## The API
 
 
-### The API
-#### Writable Parts
-#### Non-Writable Parts
-#### Adding a New History Entry Versus Replacing One
-## Events in Routing
-### `$location` Related Events
-### `$route` Related Events
-## The `ng-include` Directive
-## Introducing the Angular UI Router
-### Getting Started With UI Router
-#### Requirements
-### Defining States
+
+### Writable Parts
+### Non-Writable Parts
+### Adding a New History Entry Versus Replacing One
+# Events in Routing
+## `$location` Related Events
+## `$route` Related Events
+# The `ng-include` Directive
+# Introducing the Angular UI Router
+## Getting Started With UI Router
+### Requirements
+## Defining States

@@ -5,4 +5,4 @@ pages:
 - [from-novice-2-ninja/ch02-modules-controllers-data-binding.md, AngularJS From Novice To Ninja, Chapter 02 - Modules Controllers & Data Binding]
 - [from-novice-2-ninja/ch03-angularjs-scope-events.md, AngularJS From Novice To Ninja, Chapter 03 - AngularJS Scopes & Events]
 - [from-novice-2-ninja/ch04-multiple-views-and-routing.md, AngularJS From Novice To Ninja, Chapter 04 - Multiple Views & Routing]
-theme: readthedocs
+theme: Yeti
