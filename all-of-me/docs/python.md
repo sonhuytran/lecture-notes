@@ -123,6 +123,10 @@ setDebugLevel()
 ## URL
 ### Convert a File Path to a URL
 
+> **References**
+>
+> - http://stackoverflow.com/questions/11687478/convert-a-filename-to-a-file-url
+
 ```python
 # python3: import urllib.parse as urlparse
 # python3: import urllib.request as urlrequest
@@ -144,6 +148,13 @@ webbrowser.open_new_tab(html_url)
 
 ## Process
 ### Launch a New Process
+
+> **References**
+> 
+> - https://docs.python.org/2/library/subprocess.html
+> - http://stackoverflow.com/questions/3022013/windows-cant-find-the-file-on-subprocess-call
+> - http://stackoverflow.com/questions/1685157/python-specify-popen-working-directory-via-argument
+> - http://stackoverflow.com/questions/9554544/python-running-command-line-tools-in-parallel
 
 ```python
 import subprocess
