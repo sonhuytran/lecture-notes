@@ -1,0 +1,1 @@
+cd "angularjs" && mkdocs serve --dev-addr=127.0.0.1:1881 && cd .. && cd "web-dev" && mkdocs serve --dev-addr=127.0.0.1:1882 && cd ..

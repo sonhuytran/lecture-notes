@@ -1,0 +1,6 @@
+site_name: All Of Me
+pages:
+- [index.md, Home]
+- [git.md, Git]
+- [python.md, Python]
+theme: readthedocs
