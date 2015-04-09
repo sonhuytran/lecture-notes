@@ -1,5 +1,3 @@
-# Multiple Views and Routing
-
 [TOC]
 
 As we're developing Single Page Apps, mapping each route to a particular view will logically divides our app into *manageable* parts and keeps it *maintainable*.
@@ -250,6 +248,17 @@ Then in the view:
 	<li><a ui-sref="view1">view1</a></li>
 	<li><a ui-sref="view2">view2</a></li>
 </ul>
+```
+
+To obtain the named parameters:
+
+```JavaScript
+angular.module('myApp.controllers')
+	.controller('Controller2', function ($scope, $stateParams, names) {
+		$scope.firstname = $stateParams.firstname;
+		$scope.lastname = $stateParams.lastname;
+		$scope.names = names; 
+	});
 ```
 
 And the function `loadView2()`:

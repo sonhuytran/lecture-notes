@@ -1,9 +1,10 @@
 site_name: AngularJS
 pages:
-- [index.md, Home]
-- [from-novice-2-ninja/ch01-falling-in-love-with-angularjs.md, AngularJS From Novice To Ninja, Chapter 01 - Falling In Love With AngularJS]
-- [from-novice-2-ninja/ch02-modules-controllers-data-binding.md, AngularJS From Novice To Ninja, Chapter 02 - Modules Controllers & Data Binding]
-- [from-novice-2-ninja/ch03-angularjs-scope-events.md, AngularJS From Novice To Ninja, Chapter 03 - AngularJS Scopes & Events]
-- [from-novice-2-ninja/ch04-multiple-views-and-routing.md, AngularJS From Novice To Ninja, Chapter 04 - Multiple Views & Routing]
+- [index.md, "Home"]
+- [from-novice-2-ninja/ch01-falling-in-love-with-angularjs.md, AngularJS From Novice To Ninja, "Chapter 01 - Falling In Love With AngularJS"]
+- [from-novice-2-ninja/ch02-modules-controllers-data-binding.md, AngularJS From Novice To Ninja, "Chapter 02 - Modules, Controllers & Data Binding"]
+- [from-novice-2-ninja/ch03-angularjs-scope-events.md, AngularJS From Novice To Ninja, "Chapter 03 - AngularJS Scopes & Events"]
+- [from-novice-2-ninja/ch04-multiple-views-and-routing.md, AngularJS From Novice To Ninja, "Chapter 04 - Multiple Views & Routing"]
+- [from-novice-2-ninja/ch05-angularjs-services-factories-and-providers.md, AngularJS From Novice To Ninja, "Chapter 05 - AngularJS Services, Factories and Providers"]
 theme: readthedocs
 markdown_extensions: [fenced_code]
