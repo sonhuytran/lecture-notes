@@ -1,0 +1,5 @@
+site_name: Encarta
+pages:
+- ["index.md", "Home"]
+- ["histoire/prehistoire/articles-cles/prehistoire.md", "Histoire", "Préhistoire / Articles clés / Préhistoire"]
+theme: Flatly
