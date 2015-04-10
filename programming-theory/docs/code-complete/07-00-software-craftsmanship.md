@@ -1,0 +1,5 @@
+- [Chapter 31 - Layout and Style](code-complete/07-31-layout-and-style/ "Chapter 31 - Layout and Style")
+- [Chapter 32 - Self-Documenting Code](code-complete/07-32-self-documenting-code/ "Chapter 32 - Self-Documenting Code")
+- [Chapter 33 - Personal Character](code-complete/07-33-personal-character/ "Chapter 33 - Personal Character")
+- [Chapter 34 - Themes in Software Craftsmanship](code-complete/07-34-themes-in-software-craftsmanship/ "Chapter 34 - Themes in Software Craftsmanship")
+- [Chapter 35 - Where to Find More Information](code-complete/07-35-where-to-find-more-information/ "Chapter 35 - Where to Find More Information")

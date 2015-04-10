@@ -1,0 +1,7 @@
+- [Chapter 20 - The Software-Quality Landscape](code-complete/05-20-the-software-quality-landscape/ "Chapter 20 - The Software-Quality Landscape")
+- [Chapter 21 - Collaborative Construction](code-complete/05-21-collaborative-construction/ "Chapter 21 - Collaborative Construction")
+- [Chapter 22 - Developer Testing](code-complete/05-22-developer-testing/ "Chapter 22 - Developer Testing")
+- [Chapter 23 - Debugging](code-complete/05-23-debugging/ "Chapter 23 - Debugging")
+- [Chapter 24 - Refactoring](code-complete/05-24-refactoring/ "Chapter 24 - Refactoring")
+- [Chapter 25 - Code-Tuning Strategies](code-complete/05-25-code-tuning-strategies/ "Chapter 25 - Code-Tuning Strategies")
+- [Chapter 26 - Code-Tuning Techniques](code-complete/05-26-code-tuning-techniques/ "Chapter 26 - Code-Tuning Techniques")

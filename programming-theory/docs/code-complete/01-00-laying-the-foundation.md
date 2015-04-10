@@ -1,0 +1,4 @@
+- [Chapter 01 - Welcome to Software Construction](code-complete/01-01-welcome-to-software-construction/ "Chapter 01 - Welcome to Software Construction")
+- [Chapter 02 - Metaphors for a Richer Understanding of Software Developement](code-complete/01-02-metaphors-for-a-richer-understanding-of-software-development/ "Chapter 02 - Metaphors for a Richer Understanding of Software Developement")
+- [Chapter 03 - Mesure Twice, Cut Once: Upstream Prerequisites](code-complete/01-03-mesure-twice-cut-once-upstream-prerequisites/ "Chapter 03 - Mesure Twice, Cut Once: Upstream Prerequisites")
+- [Chapter 04 - Key Construction Decisions](code-complete/01-04-key-construction-decisions/ "Chapter 04 - Key Construction Decisions")
