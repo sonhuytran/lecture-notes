@@ -54,9 +54,9 @@ Building sofware implies various stage of planning, preparation, and execution t
 
 > The larger the project is, the more complicated the building process will be, and so are the consequences of poor design.
 
-Building a software system is like building a large house: you'll reuse high-level language features, prebuilt libraries, etc. It generally doestn't make sense to code things you can buy ready-made.
+Building a software system is like building a large house: you'll reuse high-level language features, prebuilt libraries, etc. **It generally doesn't make sense to code things you can buy ready-made**.
 
-The customization has parallels in software development.
+But the customization has parallels in software development. **If you're building a first-class software product, you might build your own scientific functions for better speed or accuracy**.
 
 > A well-planned project improves your ability to change your mind later about details.
 
@@ -67,7 +67,14 @@ Making structural changes in a program costs more than adding or deleting periph
 > In extremely large project: it's better to pay 10% more for stronger material than to have a skycraper fall over.
 
 ## Applying Software Techniques: The Intellectual Toolbox
+
+The techniques are not rules; they are analytical tools. A good programmer knows the right tool for the job and know how to use it correctly. The more you learn about programming, the more you fill your mental toolbox with analytical tools and the knowledge of when to use them and how to use them correctly.
+
 ## Combining Metaphors
+
+Because metaphors are heuristic rather than algorithms, they are not mutually exclusive. Use whatever metaphor or combination of metaphors stimulates your own thinking or communicates well with others on your team.
+
+Using metaphors is a fuzzy business. You have to **extend** them to benetif from te heuristic insights they provide. But if you extend them **TOO FAR** or in the **WRONG DIRECTION**, they'll **MISLEAD** you.
 
 # Additional Resources
 
